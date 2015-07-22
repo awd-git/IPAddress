@@ -1,0 +1,25 @@
+{
+  "name": "awd/ip6calculator",
+  "description": "IPv6 Calculator",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "awd-git",
+      "email": "aw@adrianworlddesign.com"
+    }
+  ],
+  "require": {
+    "php": "^5.5",
+    "php-di/php-di": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "IPAddress\\": "app/"
+    }
+  }
+
+}

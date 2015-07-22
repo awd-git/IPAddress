@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="bootstrap.php" >
+    <testsuites>
+        <testsuite name="IP6">
+            <directory>./</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">../app</directory>
+            <exclude>
+                <file>../app/bootstrap.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html" target="../coverage" charset="UTF-8" yui="true" highlight="true" lowUpperBound="50" highLowerBound="80" />
+    </logging>
+</phpunit>
